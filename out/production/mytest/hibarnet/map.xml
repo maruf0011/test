@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hibarnet.EntityMatchDetails" table="MatchDetails" schema="" catalog="fifaworldcup">
+        <property name="matchno">
+            <column name="matchno" sql-type="int" not-null="true"/>
+        </property>
+        <property name="teamA">
+            <column name="TeamA" sql-type="varchar" length="100" not-null="true"/>
+        </property>
+        <property name="teamB">
+            <column name="TeamB" sql-type="varchar" length="100" not-null="true"/>
+        </property>
+        <property name="venue">
+            <column name="Venue" sql-type="varchar" length="100" not-null="true"/>
+        </property>
+    </class>
+    <class name="hibarnet.EntityMatchList" table="MatchList" schema="" catalog="fifaworldcup">
+        <property name="matchNo">
+            <column name="MatchNo" sql-type="int" not-null="true"/>
+        </property>
+        <property name="day">
+            <column name="day" sql-type="int" not-null="true"/>
+        </property>
+        <property name="hour">
+            <column name="Hour" sql-type="int" not-null="true"/>
+        </property>
+        <property name="min">
+            <column name="Min" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

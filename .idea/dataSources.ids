@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - @localhost" uuid="b8f19daa-1973-4b14-89de-26a257be0858">
+    <database-info product="MySQL" version="5.5.38-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="fifaworldcup"/>
+    <table name="MatchDetails" schema="" catalog="fifaworldcup" type="TABLE">
+      <column name="matchno" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="TeamA" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TeamB" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Venue" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+    </table>
+    <table name="MatchList" schema="" catalog="fifaworldcup" type="TABLE">
+      <column name="MatchNo" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="day" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Hour" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Min" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+  </data-source>
+</component>
